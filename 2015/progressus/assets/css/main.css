@@ -139,3 +139,20 @@ img.pull-left { margin-right: 10px; }
 
 	.widget-simplenav { margin-left:-5px; }		
 	.widget-simplenav a{ margin:0 5px; }		
+
+
+  /*SavvySoftWorks*/
+  .rday1nav {
+    background-color: #0D1534;
+  }
+
+  .navbar-inverse .navbar-nav li a:hover.btn.rday1 {
+    background-color: #902A1C;
+    color: #FFFFFF;
+  }
+
+  .rday1head {
+    padding-top: 144px;
+    img: float:right;
+    color: #902A1C;
+  }
