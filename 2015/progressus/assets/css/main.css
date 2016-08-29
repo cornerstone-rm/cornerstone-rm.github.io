@@ -146,7 +146,15 @@ img.pull-left { margin-right: 10px; }
     background-color: #0D1534;
   }
 
-  .navbar-inverse .navbar-nav li a:hover.btn.rday1 {
+  .navbar-inverse .navbar-nav li a.rday1 {
+    color: #FFCC00;
+  }
+
+  .navbar-inverse .navbar-nav li a:hover.rday1 {
+    color: #FFFFFF;
+  }
+
+  .navbar-inverse .navbar-nav li a:hover.btn.rday1b {
     background-color: #902A1C;
     color: #FFFFFF;
   }
