@@ -14,8 +14,7 @@ gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-gh-pages'
 
-gem 'middleman-jquery'
-gem 'bootstrap-sass'
+gem 'middleman-sprockets', '>= 4.0.0'
 
-gem 'font-awesome-sass'
+gem 'middleman-jquery'
 # gem 'font-awesome-middleman'

@@ -1,6 +1,7 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
+activate :sprockets
 
 # Per-page layout changes:
 #
@@ -8,6 +9,8 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+set :fonts_dir,  "fonts"
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -18,21 +21,15 @@ page '/*.txt', layout: false
 
 # General configuration
 
+sprockets.append_path File.join root, 'node_modules'
+
+activate :relative_assets
+set :relative_links, true
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
 end
-
-###
-# Helpers
-###
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 # Build-specific configuration
 configure :build do
@@ -42,6 +39,3 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
-
-# ???
-set :fonts_dir,  "fonts"

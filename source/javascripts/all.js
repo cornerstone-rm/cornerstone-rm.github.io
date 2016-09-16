@@ -1,5 +1,5 @@
 //= require jquery
-//= require bootstrap-sprockets
+//= require bootstrap-sass/assets/javascripts/bootstrap-sprockets
 
 $(document).ready(function() {
     // Configure/customize these variables.
