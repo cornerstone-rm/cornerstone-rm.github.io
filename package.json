@@ -1,11 +1,24 @@
 {
   "name": "cornerstone_middleman",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garyanewsome/cornerstone_middleman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/garyanewsome/cornerstone_middleman/issues"
+  },
+  "homepage": "https://github.com/garyanewsome/cornerstone_middleman#readme",
+  "description": ""
 }
