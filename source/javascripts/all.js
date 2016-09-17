@@ -35,4 +35,19 @@ $(document).ready(function() {
         $(this).prev().toggle();
         return false;
     });
+
+
+    $('.alex-button').click(function(){
+        $(this).find('.alex-content').clone().appendTo('.alex-modal-body');
+        $('#alex-modal .alex-modal-body .control-group.hide').show();
+        $('#alex-modal').modal();
+
+    });
+    
+    $('#alex-modal').on('hidden', function(){
+        $('#alex-modal .alex-content').remove();
+    });
+
 });
+
+
