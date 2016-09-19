@@ -4,6 +4,8 @@ require 'middleman-core/load_paths'
 require 'middleman-core'
 require 'middleman-core/rack'
 
+require 'yaml'
+
 require 'fileutils'
 FileUtils.mkdir('log') unless File.exist?('log')
 ::Middleman::Logger.singleton("log/#{ENV['RACK_ENV']}.log")

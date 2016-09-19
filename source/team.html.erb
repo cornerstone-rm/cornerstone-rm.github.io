@@ -1,0 +1,70 @@
+---
+title: Cornerstone | Meet the Team
+---
+<!-- Intro -->
+<div class="container text-center">
+  <br>
+  <h2 class="text-center top-space">Our Team</h2>
+</div>
+<div class="container">
+  <% data.team.our_team.each do |member| %>
+    <div class="col-md-3 col-sm-6 highlight">
+      <div class="h-caption">
+        <i class>
+          <div id = "imgborderc">
+            <img src="<% member.image %>" alt="<% member.name %>">
+          </div>
+        </i>
+        <h2 class="text-left">
+          <h4><% member.name %></h4>
+        </h2>
+        <h6><span class="text-muted"><% member.position %></span></h6>
+        <div class="linec"></div>
+      </div>
+      <div class="h-body text-left">
+        <span class="more"><% member.about %>
+        </span><br><br>
+      </div>
+    </div>
+
+    <button type="button" class="btn-team" data-toggle="modal" data-target="#<% member.idn %>">      
+        <div class="h-caption">
+          <img src="<% member.image %>" alt="<% member.name %>">
+          <h4>%< member.name %></h4>        
+          <h6><% member.position %></h6>
+          <div class="linec"></div>
+        </div>      
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="<% member.idn %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-title" id="myModalLabel">
+              <h2 class="text-center">
+                <img src="<% member.image %>" alt="<% member.name %>">
+                <h4 class="text-center"><% member.name %></h4>        
+                <h6 class="text-center"><% member.position %></h6>
+                <!-- When adding LinkedIn icons remove preceding </h6> tag
+                <br><br>
+                <a href="https://www.linkedin.com/in/joe-thoresen-9237a375"><i class="fa fa-linkedin-square" style="font-size: 2em; color:steelblue"; title="Visit Joe's LinkedIn profile."></i></a>
+                </h6> -->
+              </h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>
+              <% member.about %>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+</div>
