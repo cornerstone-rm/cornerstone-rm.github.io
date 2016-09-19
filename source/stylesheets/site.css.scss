@@ -95,7 +95,9 @@ $navbar_color: #FFCC00;
 .h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:2px; }
 .h-caption .h4a { color:#382526; font-size: 24px; margin:0 0 0 0;}
 .h-caption h5 { color:#382526; font-size: 16px;  margin-bottom:2px; }
-.h-body {}
+.h-body {
+  padding: 4px;
+}
 
 video {
   width: 100%    !important;
@@ -190,6 +192,16 @@ img.pull-left { margin-right: 10px; }
   padding-top: 48px;
 }
 
+// Team Modal Buttons
+.btn-team {
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+// Gallery
 .gal-container{
   padding: 12px;
 }
