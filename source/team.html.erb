@@ -1,54 +1,59 @@
 ---
 title: Cornerstone | Meet the Team
 ---
+<% @count = 0 %>
 <!-- Intro -->
 <div class="container text-center">
   <br>
   <h2 class="text-center top-space">Our Team</h2>
-  
+  <div class="row">
   <% data.team.our_team.each do |member| %>
-  <div class="col-md-3 col-sm-6 highlight">
-    <button type="button" class="btn-team" data-toggle="modal" data-target="#<%= member.idn %>">      
-        <div class="h-caption">
-          <i class>
-            <div id = "imgborderc">
-              <img src="<%= member.image %>" alt="<%= member.name %>">
-            </div>
-          </i>
-          <h4><%= member.name %></h4>        
-          <h6><%= member.position %></h6>
-          <div class="linec"></div>
-        </div>
-        <div class="h-body text-left more">
-            <%= member.about %>
-        </div>
-      </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="<%= member.idn %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="modal-title" id="myModalLabel">
-              <h2 class="text-center">
+    <% if @count >= 4 %>
+      </div><div class="row">
+    <% end %>
+    <div class="col-md-3 col-sm-6 highlight">
+      <button type="button" class="btn-team" data-toggle="modal" data-target="#<%= member.idn %>">      
+          <div class="h-caption">
+            <i class>
+              <div id = "imgborderc">
                 <img src="<%= member.image %>" alt="<%= member.name %>">
-                <h4 class="text-center"><%= member.name %></h4>        
-                <h6 class="text-center"><%= member.position %></h6>
-              </h2>
-            </div>
+              </div>
+            </i>
+            <h4><%= member.name %></h4>        
+            <h6><%= member.position %></h6>
+            <div class="linec"></div>
           </div>
-          <div class="modal-body">
-            <p>
+          <div class="h-body text-left more">
               <%= member.about %>
-            </p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="<%= member.idn %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modal-title" id="myModalLabel">
+                <h2 class="text-center">
+                  <img src="<%= member.image %>" alt="<%= member.name %>">
+                  <h4 class="text-center"><%= member.name %></h4>        
+                  <h6 class="text-center"><%= member.position %></h6>
+                </h2>
+              </div>
+            </div>
+            <div class="modal-body">
+              <p>
+                <%= member.about %>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   <% end %>
+  </div>
 </div>
