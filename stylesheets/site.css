@@ -8474,6 +8474,9 @@ button.close {
   font-size: 16px;
   margin-bottom: 2px; }
 
+.h-body {
+  padding: 4px; }
+
 video {
   width: 100%    !important;
   height: auto   !important; }
@@ -8694,6 +8697,13 @@ img.pull-left {
 
 .rday1head {
   padding-top: 48px; }
+
+.btn-team {
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0px;
+  background-color: #ffffff;
+  border: none; }
 
 .gal-container {
   padding: 12px; }
