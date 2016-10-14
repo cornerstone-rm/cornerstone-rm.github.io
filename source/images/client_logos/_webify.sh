@@ -1,7 +1,7 @@
 # Use a simple shell loop, to process each of the images.
 mkdir web
 find * -prune -name '*.png' \
-       -exec  convert '{}' -resize x48 web/web_'{}' \;
+       -exec  convert '{}' -resize x40 web/web_'{}' \;
 
 # Use find to substitute filenames into a 'convert' command.
 # This also provides the ability to recurse though directories by removing
