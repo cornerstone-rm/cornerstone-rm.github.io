@@ -1,0 +1,24 @@
+---
+title: Cornerstone | News
+---
+<div class="blog container" id="blog">
+  <h2>News and Updates from Cornerstone</h2>
+  <div class="row">
+      <% blog.articles[0...4].each do |article| %>
+        <article class="col-sm-12 col-md-6" style="padding-right: 2em;">
+          <h3 class="blog_header">
+            <a href="<%= article.url %>"><%= article.title %></a>
+          </h3>
+          <p  style="text-align: center;">
+            <time><%= article.date.strftime('%b %e %Y') %></time>
+          </p>
+
+          <%= article.summary(500, '...') %>
+          <p style ="text-align: center">
+            <a href="<%= article.url %>" style="color: #D40000;">Read more</a>
+          </p>
+        </article>
+      <% end %>
+    </div>
+  </div>
+</div>
