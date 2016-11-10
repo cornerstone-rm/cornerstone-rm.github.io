@@ -8833,3 +8833,18 @@ i.red {
 
 .logo_bar {
   padding: 4px 8px 4px 8px; }
+
+.blog_container {
+  padding: 1em 0em 1em 0em;
+  width: 80%; }
+
+.blog {
+  padding: 2em 0em 2em 0em;
+  min-height: 480px; }
+  .blog a {
+    color: #0D1534; }
+  .blog a:hover {
+    color: #333333; }
+
+.press_release_column--article {
+  padding: 1em 0em 1em 0em; }
