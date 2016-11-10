@@ -5,7 +5,7 @@ title: Cornerstone | News
   <div class="blog_column col-sm-12 col-md-8">
     <h2>News and Updates from Cornerstone</h2>
     <div class="row">
-        <% blog.articles[0...4].each do |article| %>
+        <% blog('blog').articles[0...4].each do |article| %>
           <article class="col-sm-12" style="padding-right: 2em;">
             <h3 class="blog_header">
               <a href="<%= article.url %>"><%= article.title %></a>
@@ -24,14 +24,22 @@ title: Cornerstone | News
   </div>
   <div class="press_release_column col-sm-12 col-md-4">
     <h2>Press Releases</h2>
-    <h4>Fake Presser #1</h4>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-    <a href="" style="color: #D40000;">Read more</a>
-    <h4>Fake Presser 2</h4>
-    <p>Kathy Ireland Video</p>
-    <a href="" style="color: #D40000;">Read more</a>
-    <h4>Fake Presser #3</h4>
-    <p>More amazing stuff about us...</p>
-    <a href="" style="color: #D40000;">Read more</a>
+    <div class="row">
+        <% blog('press').articles[0...4].each do |article| %>
+          <article class="col-sm-12" style="padding-right: 2em;">
+            <h3 class="blog_header">
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </h3>
+            <p  style="text-align: center;">
+              <time><%= article.date.strftime('%b %e %Y') %></time>
+            </p>
+
+            <%= article.summary(150, '...') %>
+            <p style ="text-align: center">
+              <a href="<%= article.url %>" style="color: #D40000;">Read more</a>
+            </p>
+          </article>
+        <% end %>
+      </div>
   </div>
 </div>
