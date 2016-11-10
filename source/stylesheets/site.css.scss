@@ -346,16 +346,6 @@ i.red{
 .blog {
   padding: 2em 0em 2em 0em;
   min-height: 480px;
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
-  h2 {
-    // color: #0D1534;
-  }
-  h3 a{
-    // color: #0D1534;
-    color: lighten(#0D1534, 20%);
-  }
   a {
     color: #0D1534;
   }
@@ -364,7 +354,8 @@ i.red{
   }
 }
 
-.blog_header {
-  padding-top: 1em;
-  text-align: center;
+.press_release_column {
+  article {
+    padding: 1em 0em 1em 0em;
+  }
 }

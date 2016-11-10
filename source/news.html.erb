@@ -3,41 +3,39 @@ title: Cornerstone | News
 ---
 <div class="blog container" id="blog">
   <div class="blog_column col-sm-12 col-md-8">
-    <h2>News and Updates from Cornerstone</h2>
+    <h3 class="text-center maincontent">NEWS AND UPDATES FROM CORNERSTONE</h3>
     <div class="row">
         <% blog('blog').articles[0...4].each do |article| %>
           <article class="col-sm-12" style="padding-right: 2em;">
-            <h3 class="blog_header">
+            <h3 class="text-left">
               <a href="<%= article.url %>"><%= article.title %></a>
             </h3>
-            <p  style="text-align: center;">
+            <p>
               <time><%= article.date.strftime('%b %e %Y') %></time>
             </p>
 
             <%= article.summary(750, '...') %>
-            <p style ="text-align: center">
-              <a href="<%= article.url %>" style="color: #D40000;">Read more</a>
+            <p>
+              <a href="<%= article.url %>" style="color: #FF7722; padding-top: 0px;">Read more</a>
             </p>
           </article>
         <% end %>
       </div>
   </div>
   <div class="press_release_column col-sm-12 col-md-4">
-    <h2>Press Releases</h2>
+    <h3 class="text-center">PRESS RELEASES</h3>
     <div class="row">
         <% blog('press').articles[0...4].each do |article| %>
           <article class="col-sm-12" style="padding-right: 2em;">
-            <h3 class="blog_header">
-              <a href="<%= article.url %>"><%= article.title %></a>
-            </h3>
-            <p  style="text-align: center;">
-              <time><%= article.date.strftime('%b %e %Y') %></time>
+            <p class="text-left" class="blog_header">
+              <strong>
+                <a href="<%= article.url %>"><%= article.title %></a>
+              </strong>
             </p>
-
-            <%= article.summary(150, '...') %>
-            <p style ="text-align: center">
-              <a href="<%= article.url %>" style="color: #D40000;">Read more</a>
-            </p>
+            <div>
+              <%= article.summary(150, '...') %>
+              <a href="<%= article.url %>" style="color: #FF7722; padding-top: 0px;">Read more</a>
+            </div>
           </article>
         <% end %>
       </div>
