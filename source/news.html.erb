@@ -26,7 +26,7 @@ title: Cornerstone | News
     <h3 class="text-center">PRESS RELEASES</h3>
     <div class="row">
         <% blog('press').articles[0...4].each do |article| %>
-          <article class="col-sm-12" style="padding-right: 2em;">
+          <article class="col-sm-12 press_release_column--article" style="padding-right: 2em;">
             <p class="text-left" class="blog_header">
               <strong>
                 <a href="<%= article.url %>"><%= article.title %></a>
