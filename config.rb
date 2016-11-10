@@ -7,8 +7,17 @@ endpose_middleman_helpers = true
 end
 
 activate :blog do |blog|
+  blog.name = 'blog'
   blog.prefix = 'blog'
   blog.layout = 'blog'
+  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.permalink = "{category}/{title}.html"
+end
+
+activate :blog do |blog|
+  blog.name = 'press'
+  blog.prefix = 'press'
+  blog.layout = 'press'
   blog.sources = "{year}-{month}-{day}-{title}.html"
   blog.permalink = "{category}/{title}.html"
 end
