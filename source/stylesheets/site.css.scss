@@ -339,12 +339,12 @@ i.red{
 }
 
 .blog_container {
-  padding: 1em 0em 1em 0em;
+  // padding: 1em 0em 1em 0em;
   width: 80%;
 }
 
 .blog {
-  padding: 2em 0em 2em 0em;
+  // padding: 2em 0em 2em 0em;
   min-height: 480px;
   a {
     color: #0D1534;
@@ -355,5 +355,9 @@ i.red{
 }
 
 .press_release_column--article {
-  padding: 1em 0em 1em 0em;
+  padding-bottom: 2em;
+}
+
+.news {
+  padding-top: 2em;
 }
