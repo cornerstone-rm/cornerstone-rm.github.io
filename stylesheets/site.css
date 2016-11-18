@@ -8847,5 +8847,8 @@ i.red {
 .press_release_column--article {
   padding-bottom: 2em; }
 
-.news {
+.blog_column {
+  padding-top: 2em; }
+
+.press_release_column {
   padding-top: 2em; }
