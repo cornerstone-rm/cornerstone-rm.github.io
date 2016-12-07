@@ -74,6 +74,15 @@ $navbar_color: #FFCC00;
   #head .lead { font-size: 34px; }
 }
 
+.breaking-news {
+  padding-top: 2em;
+  a {
+    color: $navbar_color;
+  }
+  a:hover {
+    color: #FFFFFF;
+  }
+}
 
 /* Javascript read more functionality */
 .morecontent span {
