@@ -8436,6 +8436,13 @@ button.close {
 
   #head .lead {
     font-size: 34px; } }
+.breaking-news {
+  padding-top: 2em; }
+  .breaking-news a {
+    color: #FFCC00; }
+  .breaking-news a:hover {
+    color: #FFFFFF; }
+
 /* Javascript read more functionality */
 .morecontent span {
   display: none; }
@@ -8852,3 +8859,7 @@ i.red {
 
 .press_release_column {
   padding-top: 2em; }
+
+.holds-the-iframe {
+  background: url(../images/vid-placeholder2.png) left center no-repeat;
+  background-size: 560px 315px; }
