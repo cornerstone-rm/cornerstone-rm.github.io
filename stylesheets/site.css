@@ -8851,6 +8851,9 @@ i.red {
   .blog a:hover {
     color: #333333; }
 
+.news-pad-bottom {
+  padding-bottom: 1em; }
+
 .press_release_column--article {
   padding-bottom: 2em; }
 
