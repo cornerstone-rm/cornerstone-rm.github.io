@@ -84,4 +84,28 @@
     <changefreq>monthly</changefreq>
     <lastmod>2017-05-15</lastmod>
   </url>
+  <url>
+    <loc>https://leadwithcornerstone.com/lten</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-05-15</lastmod>
+  </url>
+  <url>
+    <loc>https://leadwithcornerstone.com/kathy_ireland</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-05-15</lastmod>
+  </url>
+  <url>
+    <loc>https://leadwithcornerstone.com/confident</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-05-15</lastmod>
+  </url>
+  <url>
+    <loc>https://leadwithcornerstone.com/managing_motivation</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-05-15</lastmod>
+  </url>
 </urlset>
