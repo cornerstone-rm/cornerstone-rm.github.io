@@ -9,4 +9,12 @@
     <lastmod><%=Time.now.strftime('%Y-%m-%d')%></lastmod>
   </url>
 <% end %>
+<% data.pages.landing_pages.each do |lp| %>
+  <url>
+    <loc>https://leadwithcornerstone.com/<%=lp.page%></loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod><%=Time.now.strftime('%Y-%m-%d')%></lastmod>
+  </url>
+<% end %>
 </urlset>
