@@ -7,7 +7,7 @@ layout: leadership_developments
     <div class="blog_column col-sm-12">
       <h3 style="text-align: center; padding-bottom:1em;">LEADERSHIP DEVELOPMENT INSIGHTS</h3>
       <div class="row">
-          <% [blog('leadership_developments').articles.first].each do |article| %>
+          <% blog('leadership_developments').articles[0...1].each do |article| %>
             <article class="col-sm-12" style="padding-bottom: 2em;">
               <h3 class="text-left">
                 <a href="<%= article.url %>"><%= article.title %></a>
@@ -20,9 +20,6 @@ layout: leadership_developments
               </p>
 
               <%= article.body %>
-              <!-- <p>
-                <a href="<%= article.url %>" style="color: #FF7722; padding-top: 0px; padding-right: 4em; float: right;">Read more</a>
-              </p> -->
             </article>
           <% end %>
         </div>
