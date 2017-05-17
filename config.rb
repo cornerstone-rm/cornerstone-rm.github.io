@@ -23,8 +23,8 @@ activate :blog do |blog|
 end
 
 activate :blog do |blog|
-  blog.name = 'leadership_developments'
-  blog.prefix = 'leadership_developments'
+  blog.name = 'leadership-developments'
+  blog.prefix = 'leadership-developments'
   blog.layout = 'leadership_development_insights_current'
   blog.sources = "{year}-{month}-{day}-{title}.html"
   blog.permalink = "{title}.html"
