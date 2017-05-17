@@ -22,6 +22,14 @@ activate :blog do |blog|
   blog.permalink = "{category}/{title}.html"
 end
 
+activate :blog do |blog|
+  blog.name = 'leadership_developments'
+  blog.prefix = 'leadership_developments'
+  blog.layout = 'leadership_development_insights_current'
+  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.permalink = "{title}.html"
+end
+
 # Per-page layout changes:
 #
 # With no layout
