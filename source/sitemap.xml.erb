@@ -17,4 +17,12 @@
     <lastmod><%=Time.now.strftime('%Y-%m-%d')%></lastmod>
   </url>
 <% end %>
+<% data.team.our_team.each do |member| %>
+  <url>
+    <loc>https://leadwithcornerstone.com/team.html#<%=member.name.parameterize%></loc>
+    <priority>1.0</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod><%=Time.now.strftime('%Y-%m-%d')%></lastmod>
+  </url>
+<% end %>
 </urlset>

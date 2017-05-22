@@ -1,3 +1,4 @@
+//= require team-data
 //= require jquery
 //= require bootstrap-sass/assets/javascripts/bootstrap-sprockets
 
@@ -25,6 +26,7 @@ $(document).ready(function() {
 jQuery(function(){
     var hash = window.location.href.split('#')[1];
     if(hash) {
-        jQuery('#' + hash).modal('show');
+        var idn = window.team[hash]
+        jQuery('#' + idn).modal('show');
     }
 });
