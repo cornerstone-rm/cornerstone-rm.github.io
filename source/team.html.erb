@@ -11,15 +11,15 @@ title: Cornerstone | Meet the Team
     <% if @count >= 4 %>
       </div><div class="row">
     <% end %>
-    <div class="col-md-3 col-sm-6 highlight">
-      <button type="button" class="btn-team" data-toggle="modal" data-target="#<%= member.idn %>">      
+    <div class="col-md-3 col-sm-6 highlight meet-the-team">
+      <button type="button" class="btn-team" data-toggle="modal" data-target="#<%= member.idn %>">
           <div class="h-caption">
             <i class>
               <div id = "imgborderc">
                 <img src="<%= member.image %>" alt="<%= member.name %>">
               </div>
             </i>
-            <h4><%= member.name %></h4>        
+            <h4><%= member.name %></h4>
             <h6><%= member.position %></h6>
             <div class="linec"></div>
           </div>
@@ -37,7 +37,7 @@ title: Cornerstone | Meet the Team
               <div class="modal-title" id="myModalLabel">
                 <h2 class="text-center">
                   <img src="<%= member.image %>" alt="<%= member.name %>">
-                  <h4 class="text-center"><%= member.name %></h4>        
+                  <h4 class="text-center"><%= member.name %></h4>
                   <h6 class="text-center"><%= member.position %></h6>
                 </h2>
               </div>
