@@ -37,6 +37,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+redirect "press/test/Cornerstone-Management-Resource-Systems-promotes-Carl-Thoresen,-Ph.D.,-to-President.html",
+  to: "press/press-releases/Cornerstone-Management-Resource-Systems-promotes-Carl-Thoresen,-Ph.D.,-to-President.html"
+
 set :fonts_dir,  "fonts"
 
 # With alternative layout
