@@ -1,9 +1,30 @@
+require 'ostruct'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
 activate :sprockets do |c|
   c.expose_middleman_helpers = true
-endpose_middleman_helpers = true
+  endpose_middleman_helpers = true
+end
+
+helpers do
+  def updates_as_posts
+    data.updates.these_updates.map do |update|
+      #update['date'] = Time.parse(update['date'])
+      OpenStruct.new(update)
+    end
+  end
+
+  def mix_news_and_updates
+    updates = updates_as_posts
+    all_news = blog('blog').articles[0...4] + updates
+    all_news.sort! do |a, b|
+      b.date.to_s <=> a.date.to_s
+    end
+    # all_news.sort_by {|news| news.date}
+    all_news
+  end
 end
 
 activate :blog do |blog|

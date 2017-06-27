@@ -356,15 +356,19 @@ i.red{
   // padding: 2em 0em 2em 0em;
   min-height: 480px;
   a {
-    color: #0D1534;
+    color: #4F7CAC;
   }
   a:hover {
     color: #333333;
   }
+  .footer1 a { color: $navbar_color; }
+  .footer1 a:hover {color: #fff; }
+  .simplenav a { color: $navbar_color; }
+  .simplenav a:hover {color: #fff; }
 }
 
 .news-pad-bottom {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .press_release_column--article {
