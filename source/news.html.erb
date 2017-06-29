@@ -6,21 +6,11 @@ title: Cornerstone | News
     <div class="blog_column col-sm-12 col-md-8">
       <h3 class="text-center maincontent">NEWS AND UPDATES FROM CORNERSTONE</h3>
       <div class="row">
-          <% mix_news_and_updates.each do |article| %>
-            <article class="col-sm-12 news-pad-bottom">
-              <h3 class="text-left">
-                <a style="color:#28324E;" href="<%= article.url %>"><%= article.title %></a>
-                <i class="fa fa-link"></i>
-              </h3>
-              <p>
-                <time><%= article.date.strftime('%b %e %Y') %></time>
-              </p>
-              <div style="margin-left:1em;">
-                <%= truncate(article.body, length: 750) %>
-              </div>
-            </article>
-          <% end %>
-        </div>
+        <% blog('blog').articles[0...4].each do |article| %>
+          <%= news_or_updates(article) %>
+      
+        <% end %>
+      </div>
     </div>
     <div class="press_release_column col-sm-12 col-md-4">
       <h3 class="text-center">PRESS RELEASES</h3>

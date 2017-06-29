@@ -9,21 +9,12 @@ activate :sprockets do |c|
 end
 
 helpers do
-  def updates_as_posts
-    data.updates.these_updates.map do |update|
-      #update['date'] = Time.parse(update['date'])
-      OpenStruct.new(update)
+  def news_or_updates(article)
+    if article.metadata[:page][:category] == 'News'
+      partial(:news, locals: {article: article})
+    else # if article.metadata[:page][:category] == 'Update'
+      partial(:update, locals: {article: article})
     end
-  end
-
-  def mix_news_and_updates
-    updates = updates_as_posts
-    all_news = blog('blog').articles[0...4] + updates
-    all_news.sort! do |a, b|
-      b.date.to_s <=> a.date.to_s
-    end
-    # all_news.sort_by {|news| news.date}
-    all_news
   end
 end
 
