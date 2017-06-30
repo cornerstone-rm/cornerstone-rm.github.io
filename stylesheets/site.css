@@ -8847,12 +8847,20 @@ i.red {
 .blog {
   min-height: 480px; }
   .blog a {
-    color: #0D1534; }
+    color: #4F7CAC; }
   .blog a:hover {
     color: #333333; }
+  .blog .footer1 a {
+    color: #FFCC00; }
+  .blog .footer1 a:hover {
+    color: #fff; }
+  .blog .simplenav a {
+    color: #FFCC00; }
+  .blog .simplenav a:hover {
+    color: #fff; }
 
 .news-pad-bottom {
-  padding-bottom: 1em; }
+  padding-bottom: 2em; }
 
 .press_release_column--article {
   padding-bottom: 2em; }
