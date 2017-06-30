@@ -6,23 +6,11 @@ title: Cornerstone | News
     <div class="blog_column col-sm-12 col-md-8">
       <h3 class="text-center maincontent">NEWS AND UPDATES FROM CORNERSTONE</h3>
       <div class="row">
-          <% blog('blog').articles[0...4].each do |article| %>
-            <article class="col-sm-12 news-pad-bottom">
-              <h3 class="text-left">
-                <a href="<%= article.url %>"><%= article.title %></a>
-                <i class="fa fa-link"></i>
-              </h3>
-              <p>
-                <time><%= article.date.strftime('%b %e %Y') %></time>
-              </p>
-
-              <%= article.summary(750, '...') %>
-              <p>
-                <a href="<%= article.url %>" style="color: #FF7722; padding-top: 0px; padding-right: 4em; float: right;">Read more</a>
-              </p>
-            </article>
-          <% end %>
-        </div>
+        <% blog('blog').articles[0...4].each do |article| %>
+          <%= news_or_updates(article) %>
+      
+        <% end %>
+      </div>
     </div>
     <div class="press_release_column col-sm-12 col-md-4">
       <h3 class="text-center">PRESS RELEASES</h3>
@@ -31,7 +19,7 @@ title: Cornerstone | News
             <article class="col-sm-12 press_release_column--article">
               <p class="text-left" class="blog_header">
                 <strong>
-                  <a href="<%= article.url %>"><%= article.title %></a>
+                  <a style="color:#28324E;" href="<%= article.url %>"><%= article.title %></a>
                 </strong>
               </p>
               <div>

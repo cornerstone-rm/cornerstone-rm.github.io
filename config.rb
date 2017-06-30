@@ -1,9 +1,21 @@
+require 'ostruct'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
 activate :sprockets do |c|
   c.expose_middleman_helpers = true
-endpose_middleman_helpers = true
+  endpose_middleman_helpers = true
+end
+
+helpers do
+  def news_or_updates(article)
+    if article.metadata[:page][:category] == 'News'
+      partial(:news, locals: {article: article})
+    else # if article.metadata[:page][:category] == 'Update'
+      partial(:update, locals: {article: article})
+    end
+  end
 end
 
 activate :blog do |blog|
