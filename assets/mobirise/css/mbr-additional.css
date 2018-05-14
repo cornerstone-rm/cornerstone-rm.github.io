@@ -10019,15 +10019,20 @@ body {
   color: #c1c1c1 !important;
 }
 .cid-qKAYHg7GuC {
-  padding-top: 105px;
-  padding-bottom: 45px;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/atd-1-640x480.jpg");
 }
 .cid-qKAYHg7GuC H1 {
   color: #e4d295;
-  text-align: center;
+  text-align: right;
 }
 .cid-qKAYHg7GuC SPAN {
-  color: #e4d295;
+  color: #0f7699;
+}
+.cid-qKAYHg7GuC H3 {
+  color: #465052;
+  text-align: right;
 }
 .cid-qKAYNuYzmq {
   padding-top: 45px;
